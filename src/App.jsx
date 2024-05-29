@@ -19,6 +19,7 @@ const App = () => {
       if (!response.ok) {
         throw new Error("No data can be fetched from server");
       }
+
       const notes = await response.json();
 
       let modifiedNotes = [];

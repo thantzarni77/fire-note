@@ -5,7 +5,7 @@ const AddNoteForm = ({ getData }) => {
 
   const addNote = async (e) => {
     e.preventDefault();
-    if (!note) {
+    if (!note.trim()) {
       alert("Please Type Something to add");
       return;
     }
